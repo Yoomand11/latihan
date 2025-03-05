@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 24px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+    transform: scale(1.05);
+}
+
+/* Success & Error Messages */
+.success {
+    color: #28a745;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s;
+}
+
+.error {
+    color: #dc3545;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+tr:hover {
+    background: rgba(0, 123, 255, 0.1);
+}
+
+/* Link Styling */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Popup Notifikasi */
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.popup-success {
+    background-color: #28a745;
+}
+
+.popup-error {
+    background-color: #dc3545;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container untuk tombol aksi */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Tombol Edit */
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+/* Tombol Delete */
+.delete-btn {
+    background-color: #dc3545 !important; /* Warna merah */
+    color: white !important;
+    padding: 8px 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.delete-btn:hover {
+    background-color: #c82333 !important;
+}
