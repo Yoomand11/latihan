@@ -1,31 +1,39 @@
-/* General Styles */
+/* ----------------------------
+   1. Gaya Umum (Body dan Font)
+---------------------------- */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Poppins', sans-serif; /* Menggunakan font modern */
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Latar belakang gradasi biru */
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333; /* Warna teks utama */
 }
 
-/* Container Styling */
+/* ----------------------------
+   2. Container Utama
+---------------------------- */
 .container {
     width: 50%;
-    margin: 50px auto;
+    margin: 50px auto; /* Tengah secara horizontal */
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.8s ease-in-out;
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Bayangan luar */
+    animation: fadeIn 0.8s ease-in-out; /* Animasi muncul */
 }
 
-/* Heading */
+/* ----------------------------
+   3. Judul
+---------------------------- */
 h2 {
     text-align: center;
-    color: #007bff;
+    color: #007bff; /* Biru cerah */
     font-size: 24px;
 }
 
-/* Form Styling */
+/* ----------------------------
+   4. Formulir
+---------------------------- */
 form {
     display: flex;
     flex-direction: column;
@@ -47,12 +55,14 @@ input, select {
 }
 
 input:focus, select:focus {
-    border-color: #007bff;
+    border-color: #007bff; /* Warna biru saat fokus */
     box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
-/* Button Styling */
+/* ----------------------------
+   5. Tombol Submit
+---------------------------- */
 button {
     margin-top: 20px;
     padding: 12px;
@@ -67,26 +77,30 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to right, #00f2fe, #4facfe);
-    transform: scale(1.05);
+    background: linear-gradient(to right, #00f2fe, #4facfe); /* Gradasi terbalik */
+    transform: scale(1.05); /* Membesar saat hover */
 }
 
-/* Success & Error Messages */
+/* ----------------------------
+   6. Pesan Sukses dan Error
+---------------------------- */
 .success {
-    color: #28a745;
+    color: #28a745; /* Hijau */
     text-align: center;
     font-weight: bold;
     animation: fadeIn 0.5s;
 }
 
 .error {
-    color: #dc3545;
+    color: #dc3545; /* Merah */
     text-align: center;
     font-weight: bold;
     animation: fadeIn 0.5s;
 }
 
-/* Table Styling */
+/* ----------------------------
+   7. Tabel Data
+---------------------------- */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -104,7 +118,7 @@ th, td {
 }
 
 th {
-    background: #007bff;
+    background: #007bff; /* Header tabel biru */
     color: white;
     font-size: 18px;
 }
@@ -115,10 +129,12 @@ td {
 }
 
 tr:hover {
-    background: rgba(0, 123, 255, 0.1);
+    background: rgba(0, 123, 255, 0.1); /* Highlight baris */
 }
 
-/* Link Styling */
+/* ----------------------------
+   8. Tautan
+---------------------------- */
 a {
     display: block;
     text-align: center;
@@ -135,7 +151,9 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Animations */
+/* ----------------------------
+   9. Animasi FadeIn
+---------------------------- */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -147,7 +165,9 @@ a:hover {
     }
 }
 
-/* Popup Notifikasi */
+/* ----------------------------
+   10. Notifikasi Pop-up
+---------------------------- */
 .popup {
     position: fixed;
     top: 20px;
@@ -163,35 +183,24 @@ a:hover {
 }
 
 .popup-success {
-    background-color: #28a745;
+    background-color: #28a745; /* Latar hijau untuk sukses */
 }
 
 .popup-error {
-    background-color: #dc3545;
+    background-color: #dc3545; /* Latar merah untuk error */
 }
 
-/* Animasi */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Container untuk tombol aksi */
+/* ----------------------------
+   11. Tombol Aksi (Edit & Delete)
+---------------------------- */
 .action-buttons {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-/* Tombol Edit */
 .edit-btn {
-    background-color: #ffc107;
+    background-color: #ffc107; /* Kuning */
     color: black;
     padding: 8px 12px;
     text-decoration: none;
@@ -202,12 +211,11 @@ a:hover {
 }
 
 .edit-btn:hover {
-    background-color: #e0a800;
+    background-color: #e0a800; /* Kuning lebih gelap */
 }
 
-/* Tombol Delete */
 .delete-btn {
-    background-color: #dc3545 !important; /* Warna merah */
+    background-color: #dc3545 !important; /* Merah */
     color: white !important;
     padding: 8px 12px;
     font-weight: bold;
@@ -219,5 +227,5 @@ a:hover {
 }
 
 .delete-btn:hover {
-    background-color: #c82333 !important;
+    background-color: #c82333 !important; /* Merah lebih gelap */
 }
