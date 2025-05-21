@@ -73,6 +73,17 @@ $dataMahasiswa = $mahasiswa->getAllMahasiswa();
         <!-- Tombol/Link untuk menuju halaman form tambah data mahasiswa -->
         <br>
         <a href="views/form.php">Tambah Data Mahasiswa</a>
+        <table>
+        <table>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Prodi</th>
+                <th>Angkatan</th>
+                <th>IPK</th>
+                <th>Aksi</th>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
